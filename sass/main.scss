@@ -1,7 +1,181 @@
+/* ==========================================================================
+   base styles
+   ========================================================================== */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1180px;
+	margin: 0 auto;
+}
+
+body {
+	font: 400 15px/1.73333 "Open Sans", Arial, sans-serif;
+	color: #fff;
+}
+
 
 
 /* ==========================================================================
    header section
    ========================================================================== */
 
-   
+.header {
+	/* Wyświetlanie i wymiary */
+
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	// justify-content: space-between;
+
+	
+	height: 103px;
+	position: relavtive;
+	z-index: -10;
+
+
+	border-bottom: 1px solid rgba(0, 0 , 0, .2);
+	background-color: rgba(0, 0 , 0, 0);
+
+}
+
+.logo {
+	  /* Wyświetlanie i wymiary */
+
+	  width: 40px;
+	  height: 20px;
+
+	  margin-left: 210px;
+	  margin-right: auto;
+
+}
+
+.nav {
+	 /* Wyświetlanie i wymiary */
+
+	display: flex;
+	justify-content: space-between;	
+
+
+	margin-right: 35px;
+}
+
+.nav-list {
+	/* Wyświetlanie i wymiary */
+
+	width: 441px;
+
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-item {
+
+}
+
+.nav-form {
+	/* Wyświetlanie i wymiary */
+
+	width: 220px;
+
+
+	margin-left: 29px;
+
+}
+
+.nav-form-search {
+	width: 100%;
+}
+
+/* ==========================================================================
+   hero section
+   ========================================================================== */
+
+.hero {
+
+	height: 100vh;
+
+	background: #000 url(../img/main-image.jpg) no-repeat fixed 0% 0%;
+	margin-top: -123px;
+	
+}
+.hero .container {
+	padding: 277px 0 0 16px;
+}
+
+.hero-text-block {
+
+
+	width: 540px;
+	text-align: right;
+}
+.hero-heading {
+	font-size: 50px;
+	line-height: 1.4;
+
+
+	margin-bottom: 60px;
+
+}
+
+.hero-button {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 3,333333;
+
+	width: 280px;
+	height: 60px;
+
+	margin-bottom: 21px;
+
+	border: none;
+	border-radius: 10px;
+
+	background-color: #8824cd;
+}
+
+.hero-paragraph {
+	font-size: 12px;
+	line-height: 1,41666667;
+}
+
+.feature {
+	background-color: #2e3b4e;
+
+
+	border-top: rgba(136, 36, 205, .5);
+}
+
+.text-block-wrapper  {
+	display: flex;
+	flex-wrap: wrap;
+	width: 820px;
+
+
+	margin: 79px 180px 142px;
+}
+
+.text-block {
+	width: 410px;
+
+	margin-bottom: 71px;
+}
+
+.text-block-heading {
+	font-weight: 700;
+
+
+	margin-bottom: 37px;
+
+}
+
+.text-block-text {
+
+}
