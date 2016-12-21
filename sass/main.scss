@@ -12,6 +12,8 @@
 .container {
 	width: 1180px;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 }
 
 body {
@@ -147,9 +149,11 @@ body {
 }
 
 .feature {
+
+
+	padding: 79px 0 142px 0;
+
 	background-color: #2e3b4e;
-
-
 	border-top: rgba(136, 36, 205, .5);
 }
 
@@ -158,8 +162,6 @@ body {
 	flex-wrap: wrap;
 	width: 820px;
 
-
-	margin: 79px 180px 142px;
 }
 
 .text-block {
@@ -177,5 +179,46 @@ body {
 }
 
 .text-block-text {
+
+}
+
+.call-to-action {
+	background: url(../img/pink.jpg) no-repeat 0% 0%;
+
+	padding: 157px 0 194px;
+}
+
+.text-block-wrapper {
+	display: flex;
+	justify-content: center;
+
+}
+
+.call-to-action-heading {
+	font: 300 35px/1.714285714285714 "Open Sans", Arial, sans-serif;
+
+	margin-bottom: 29px;
+}
+
+.call-to-action-text {
+	
+	margin-bottom: 34px;
+	text-align: center;
+
+}
+
+.call-to-action-button {
+
+	width: 342px;
+	height: 62px;
+
+	
+	font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
+
+	border: none;
+	border-radius: 10px;
+
+	background-color: #fff;
+	color: #d54c63
 
 }
