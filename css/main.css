@@ -2,7 +2,7 @@
 /* ==========================================================================
    base styles
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +21,6 @@
 .right {
   -ms-flex-pack: end;
       justify-content: flex-end;
-}
-
-.no-bottom-margin {
-  margin-bottom: 0;
 }
 
 body {
@@ -204,8 +200,13 @@ body {
   margin-bottom: 71px;
 }
 
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
 .text-block-heading {
   font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 37px;
 }
 
@@ -311,11 +312,70 @@ body {
 .call-to-action-button-2 {
   width: 280px;
   height: 60px;
+  margin-bottom: 20px;
   font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
   border: none;
   border-top: 1px solid #b87ce1;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px #b87ce1;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background-color: #8824cd;
   color: #fff;
 }
+
+/* ==========================================================================
+   feature article section
+   ========================================================================== */
+.feature-article {
+  background: #fff url(../img/chow.jpg) no-repeat 0% 0%;
+  padding: 359px 0 89px 0;
+}
+
+.feature-article-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  width: 520px;
+}
+
+.feature-article-button {
+  width: 135px;
+  height: 35px;
+  margin-bottom: 19px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  font: 600 13px/2 "Open Sans", Arial, sans-serif;
+}
+
+.feature-article-text {
+  font-size: 40px;
+  line-height: 1.25;
+  margin-bottom: 23px;
+}
+
+.avatar-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.feature-article-avatar {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: url(../img/avatar.png) no-repeat 0% 0%;
+}
+
+.feature-article-user {
+  display: inline-block;
+  margin-left: 15px;
+  font: 600 13px/3 "Open Sans", Arial, sans-serif;
+}
+
+/* ==========================================================================
+   about section
+   ========================================================================== */
