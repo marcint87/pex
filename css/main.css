@@ -23,6 +23,10 @@
       justify-content: flex-end;
 }
 
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
 body {
   font: 400 15px/1.73333 "Open Sans", Arial, sans-serif;
   color: #fff;
@@ -104,17 +108,19 @@ body {
 }
 
 .nav-form-search:focus + .search-glass {
-  display: none;
+  opacity: 0;
 }
 
 .search-glass {
   position: relative;
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 .search-glass:before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: -15px;
   right: -206px;
   width: 12px;
   height: 12px;
@@ -125,7 +131,7 @@ body {
 .search-glass:after {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 1px;
   right: -213px;
   width: 13px;
   height: 3px;
@@ -178,6 +184,8 @@ body {
    feature section
    ========================================================================== */
 .feature {
+  display: -ms-flexbox;
+  display: flex;
   padding: 79px 0 142px 0;
   background-color: #2e3b4e;
   border-top: rgba(136, 36, 205, 0.5);
