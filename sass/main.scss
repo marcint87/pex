@@ -122,6 +122,7 @@ body {
 	width: 220px;
 
 	margin-left: 28px;
+	position: relative;
 
 }
 
@@ -130,6 +131,8 @@ body {
 	width: 192px;
 	height: 44px;
 	box-sizing: border-box;
+
+	position: relative;
 
 	font-size: 12px;
 	padding: 0 0 0 28px;
@@ -143,7 +146,9 @@ body {
 	opacity: 0;
 }
 .search-glass {
-	position: relative;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 	
 	opacity: 1;
 	transition: opacity 1s;
@@ -152,14 +157,14 @@ body {
 .search-glass:before {
 	content: "";
 
+	width: 8px;
+	height: 8px;
+
 	position: absolute;
-	top: 0px;
-	right: 30px;
+	top: 6px;
+	right: 5px;
 
-	width: 12px;
-	height: 12px;
-
-	border: 3px solid #b6b6b6;
+	border: 2px solid #b6b6b6;
 	border-radius: 50%;
 }
 
@@ -168,13 +173,16 @@ body {
 
 	position: absolute;
 	top: 17px;
-	right: 23px;
+	right: 3px;
 
-	width: 13px;
-	height: 3px;
+	width: 6px;
+	height: 2px;
 
 	background-color: #b6b6b6;
 	transform: rotate(45deg);
+
+
+
 }
 
 /* ==========================================================================
@@ -222,6 +230,8 @@ body {
 	border-radius: 30px;
 
 	background-color: #8824cd;
+
+	transition: all .7s ease-in-out;
 }
 
 .hero-paragraph {
@@ -332,8 +342,15 @@ body {
 	border-radius: 30px;
 
 	background-color: #fff;
-	color: #d54c63
+	color: #d54c63;
 
+	transition: all .7s ease-in-out;
+}
+
+.call-to-action-button:hover,
+.hero-button:hover,
+.call-to-action-button-2:hover {
+	transform: scale(1.25);
 }
 
 /* ==========================================================================
@@ -397,7 +414,7 @@ body {
 
 	padding-top: 179px;
 	padding-bottom: 116px;
-	
+
 	background: url(../img/image-stretch.jpg) no-repeat 0% 0%;
 }
 
@@ -449,6 +466,7 @@ body {
 	background-color: #8824cd;
 	color: #fff;
 
+	transition: all .7s ease-in-out;
 }
 
 .call-to-action-text-small {
