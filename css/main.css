@@ -104,6 +104,7 @@ body {
 
 .nav-link {
   font: 400 13px/1.8461% "Open Sans", Arial, sans-serif;
+  line-height: 103px;
   text-decoration: none;
   color: #fff;
 }
@@ -417,8 +418,9 @@ body {
 
 .feature-article-text {
   font-size: 40px;
+  font-weight: 400;
+  margin: 0 0 22px 0;
   line-height: 1.25;
-  margin-bottom: 22px;
 }
 
 .avatar-wrapper {
