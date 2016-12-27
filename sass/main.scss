@@ -363,14 +363,22 @@ body {
 	display: flex;
 	justify-content: center;
 
-	background: #fff url(../img/hand.jpg) no-repeat 0% 0%;
+	// background: #fff url(../img/hand.jpg) no-repeat 0% 0%;
 
-	padding-top: 86px;
+	// padding-top: 86px;
 	
-	padding-bottom: 129px;
+	// padding-bottom: 129px;
 
 	color: #3a4d60;
 
+
+}
+
+.text-section .container {
+	padding: 86px 0 0 0;
+	max-width: 1180px;
+	max-width: 954px;
+	flex-grow: 1;
 
 }
 
@@ -378,9 +386,19 @@ body {
 
 
 	// width: 660px;
-	width: 55.93%;
+	// width: 55.93%;
+	// padding-left: 10px;
 
-	padding-left: 10px;
+	width: 750px;
+	padding-left: 100px;
+}
+
+// div with a picture
+
+.text-section-image {
+	background: #fff url(../img/hand.jpg) no-repeat 0% 0%;
+	width: 629px;
+	height: 495px;
 }
 
 .text-section-heading {
@@ -524,7 +542,7 @@ body {
 .feature-article-text {
 	font-size: 40px;
 	font-weight: 400;
-	
+
 	margin: 0 0 22px 0;
 	line-height: 1.25;
 
@@ -564,20 +582,36 @@ body {
    ========================================================================== */
 
 .about {
+	// height: 516px;
+	// background: url(../img/watch.jpg) no-repeat right 0%;
+	// padding: 107px	 0 91px 0;
+	display: flex;
+}
+
+.about-section-image {
+	background: #fff url(../img/watch.jpg) no-repeat 0% 0%;
+	width: 670px;
 	height: 516px;
+}
 
-	background: url(../img/watch.jpg) no-repeat right 0%;
+.about .container {
+	padding: 107px 0 0 0;
+	max-width: 1180px;
+	max-width: 930px;
+	flex-grow: 1;
 
-	padding: 107px	 0 91px 0;
 }
 
 .about-wrapper {
 	// width: 660px;
-	width: 55.93%;
+	// width: 55.93%;
+
+	width: 92.93%;
 
 
 	color: #3a4d60;
-	padding-left: 8px;
+	// padding-left: 8px;
+	padding-left: 208px;
 }
 
 .about-heading {
@@ -655,3 +689,490 @@ body {
 	padding-left: 8px;
 	font-size: 12px;
 }
+
+
+/* ==========================================================================
+    ###################### media queries section ###################
+   ========================================================================== */
+
+
+
+   /* mobile subsection
+   ========================================================================== */
+
+
+
+// @media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.logo {
+		margin-left: 50px;
+	}
+	.menu-wrapper {
+		width: 70px;
+		height: 30px;
+
+		position: relative;
+
+		margin-right: 50px;
+		cursor: pointer;
+	}
+	.menu {
+		width: 100%;
+		height: 3px;
+		
+		background-color: #fff;
+		border-radius: 3px;
+	}
+	.menu:before {
+		content: "";
+		width: 70px;
+		height: 3px;
+
+		position: absolute;
+		top: 10px;
+
+		margin-right: 50px;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+	.menu:after {
+		content: "";
+		width: 70px;
+		height: 3px;
+
+		position: absolute;
+		bottom: 7px;
+
+		margin-right: 50px;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+   .nav {
+   	display: none;
+   }
+
+/* ==========================================================================
+  hero section
+   ========================================================================== */
+ .hero .container {
+ 	padding-top: 125px;
+ }
+
+ .hero-heading {
+ 	padding-right: 0px;
+ }
+
+ .hero-text-block {
+ 	text-align: center;
+ }
+ .hero-button {
+ 	margin-right: 0;
+ }
+ .hero-button:hover {
+ 	transform: none;
+ }
+
+ .hero-paragraph {
+ 	margin-right: 0;
+ }
+
+/* ==========================================================================
+  feature section
+   ========================================================================== */
+   .feature {
+   	height:  auto;
+
+   	padding-bottom: 20px;
+	padding-top: 20px;
+
+   }
+
+   .text-block {
+   	width: auto;
+
+   	text-align: center;
+   	padding-left: 0px;
+   }
+
+   .text-block-wrapper {
+   		padding-left: 0px;
+   }
+
+   .no-bottom-margin {
+   	margin-bottom: 56px; 
+   }
+
+/* ==========================================================================
+  call to action section
+   ========================================================================== */
+
+	.call-to-action {
+		padding-top: 45px;
+		padding-bottom: 85px;
+		background: url(../img/bump.png) no-repeat 50.5% -10.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+	}
+
+	.text-block-wrapper-2 {
+    	width: auto;
+    	padding-left: 0px;
+
+	}
+
+	.call-to-action-heading {
+		text-align: center;
+	}
+	.call-to-action-button {
+    	max-width: 320px
+	}
+
+	.call-to-action-button:hover {
+		transform: none;
+	}
+
+
+	.call-to-action-text {
+		width: auto;
+	}
+
+/* ==========================================================================
+  text section
+   ========================================================================== */
+	.text-section-image {
+		display: none;
+		
+	}
+
+	.text-section .container {
+		padding: 20px 0 20px 5px;
+
+	}
+
+	.text-section-wrapper{
+		padding-left: 5px;
+	}
+
+
+
+/* ==========================================================================
+  call to action 2 section
+   ========================================================================== */
+	.call-to-action-2 {
+		padding: 100px 0 16px 0;
+	}
+
+/* ==========================================================================
+  feature-article section
+   ========================================================================== */
+   .feature-article {
+   		height: auto;
+		padding: 30px 0 30px 0;
+   }
+
+	/* ==========================================================================
+  contact section
+   ========================================================================== */
+
+   .about .container {
+   		padding: 35px 0 20px 5px;
+   }
+   .about-wrapper {
+   	padding-left: 5px;
+   }
+   .about-section-image {
+		display: none;
+   }
+
+	/* ==========================================================================
+  contact section
+   ========================================================================== */
+	.contact {
+		height: auto;
+		padding: 20px 0 20px 0;
+	}
+	
+	/* ==========================================================================
+  footer section
+   ========================================================================== */
+
+   .footer {
+   		height: auto;
+		padding: 30px 0 30px 5px;
+   }
+}
+
+
+
+
+
+
+
+/* tablet subsection
+   ========================================================================== */
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+
+.container {
+	width: auto;
+}
+
+// header
+	.logo {
+	margin-left: 20px;
+}
+
+.nav {
+	display: none;
+}
+
+.menu-wrapper {
+		width: 70px;
+		height: 30px;
+
+		position: relative;
+
+		margin-right: 50px;
+		cursor: pointer;
+	}
+	.menu {
+		width: 100%;
+		height: 3px;
+		
+		background-color: #fff;
+		border-radius: 3px;
+	}
+	.menu:before {
+		content: "";
+		width: 70px;
+		height: 3px;
+
+		position: absolute;
+		top: 10px;
+
+		margin-right: 50px;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+	.menu:after {
+		content: "";
+		width: 70px;
+		height: 3px;
+
+		position: absolute;
+		bottom: 7px;
+
+		margin-right: 50px;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+.nav-list {
+	max-width: auto;
+}
+
+.nav-form {
+	max-width: auto;
+}
+
+.hero .container {
+	padding-top: 200px;
+	padding-left: 120px;
+}
+
+// text section
+
+.text-section .container {
+	max-width: 465px;
+	padding-top: 30px;
+}
+
+
+
+
+//  call to action 2 section
+
+.text-block-wrapper-3 {
+    width: auto;
+
+}
+
+.text-section-wrapper {
+	padding-left: 30px;
+}
+// feature 
+
+.feature {
+	padding-top: 30px;
+	padding-bottom: 60px;
+
+}
+
+.text-block-wrapper {
+	justify-content: center;
+}
+
+.text-block {
+    width: 230px;
+}
+
+
+
+
+
+
+
+// about
+.about-wrapper {
+	padding-left: 10px;
+	
+}
+
+.about .container {
+	padding-top: 60px;
+}
+
+
+
+// contact 
+.contact {
+	height: auto;
+	padding: 30px 0 30px 0;
+}
+// footer
+
+.footer {
+	height: auto;
+	padding: 30px 0 30px 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* desktop subsection
+   ========================================================================== */
+
+   @media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+   	.container {
+   		width: 100%;
+   	}
+
+   	/* ==========================================================================
+   header section
+   ========================================================================== */
+   .logo {
+   		margin-left: 70px;
+   }
+
+   .hero-text-block {
+   		margin-left: 50px;
+   }
+   	
+
+   	/* ==========================================================================
+   hero section
+   ========================================================================== */
+
+	.hero .container {
+		padding-top: 230px;
+	}
+
+
+/* ==========================================================================
+  text section
+   ========================================================================== */
+	.text-section .container {
+		width: 50%;
+		padding-top: 36px;
+	}
+
+	.text-section-wrapper {
+		padding-left: 60px;
+	}
+
+
+	
+/* ==========================================================================
+  about section
+   ========================================================================== */
+	.about .container {
+		padding-top: 75px;
+	}
+
+	.about-wrapper {
+		padding-left: 50px;
+	}
+
+
+/* ==========================================================================
+  contact section
+   ========================================================================== */
+
+	.contact .container {
+		padding-left: 210px;
+	}
+
+
+/* ==========================================================================
+  footer section
+   ========================================================================== */
+	.footer .container {
+		padding-left: 210px;
+	}
+}
+
+
+
+/* ==========================================================================
+  media queries landscape view
+   ========================================================================== */
+
+@media (min-width: 320px) and (orientation:landscape) {
+	.hero .container {
+		padding: 58px;
+	}
+
+	.call-to-action-2  {
+		padding-bottom: 85px;
+	}
+
+	.about-container {
+		padding-top: 50px;
+	}
+}
+
+@media (min-width: 1024px) and (orientation:landscape) {
+	.hero .container {
+		    padding-top: 228px;
+    		padding-left: 248px;
+	}
+
+	.feature-article {
+		padding-left: 50px;
+	}
+
+	..contact {
+		height: auto;
+	}
+
+	.contact .container,
+	.footer .container {
+		padding: 30px 0 30px 45px;
+	}
+} 
