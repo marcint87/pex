@@ -192,7 +192,7 @@ body {
 .hero {
 
 	height: 100vh;
-	background: #000 url(../img/main-image.jpg) no-repeat fixed 0% 0%;
+	background: #000 url(../img/main-image2.jpg) no-repeat fixed 0% 0%;
 }
 .hero .container {
 
@@ -255,6 +255,7 @@ body {
 	// padding: 15.45988258317025% 0 27.78864970645793% 0;
 
 	background-color: #2e3b4e;
+	// background: #2e3b4e url(../img/bump.png) no-repeat 50% 50%;
 	border-top: rgba(136, 36, 205, .5);
 }
 
@@ -298,7 +299,7 @@ body {
    ========================================================================== */
 
 .call-to-action {
-	background: url(../img/pink.jpg) no-repeat 0% 0%;
+	background: url(../img/bump.png) no-repeat 50.5% -8%, url(../img/pink.jpg) no-repeat 0% 0%;
 
 	padding: 138px 0 195px;
 	
@@ -420,26 +421,29 @@ body {
 
 .text-block-wrapper-3 {
 
-	width: 740px;
-
+	// width: 740px;
+	width: 780px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column nowrap;
 
+	text-align: center;
+
 }
 
 .call-to-action-heading-2 {
 	font: 300 40px/1.2 "Open Sans", Arial, sans-serif;
+	letter-spacing: -1px;
 
-	margin-bottom: 22px;
+	margin: 0 0 22px 15px;
 
-	
 }
 
 .call-to-action-text-2 {
 
 	margin-bottom: 28px;
+	margin-left: 29px;
 
 	color: #a87bb7;
 
@@ -454,6 +458,7 @@ body {
 	height: 60px;
 
 	margin-bottom:  14px;
+	margin-left: 15px;
 
 	
 	font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
@@ -471,7 +476,8 @@ body {
 
 .call-to-action-text-small {
 	font-size: 12px;
-	line-height: 1.416;		
+	line-height: 1.416;
+	margin-left: 15px;
 }
 
 

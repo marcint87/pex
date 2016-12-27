@@ -167,7 +167,7 @@ body {
    ========================================================================== */
 .hero {
   height: 100vh;
-  background: #000 url(../img/main-image.jpg) no-repeat fixed 0% 0%;
+  background: #000 url(../img/main-image2.jpg) no-repeat fixed 0% 0%;
 }
 
 .hero .container {
@@ -250,7 +250,7 @@ body {
    call-to-action section
    ========================================================================== */
 .call-to-action {
-  background: url(../img/pink.jpg) no-repeat 0% 0%;
+  background: url(../img/bump.png) no-repeat 50.5% -8%, url(../img/pink.jpg) no-repeat 0% 0%;
   padding: 138px 0 195px;
 }
 
@@ -340,7 +340,7 @@ body {
 }
 
 .text-block-wrapper-3 {
-  width: 740px;
+  width: 780px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -349,15 +349,18 @@ body {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
+  text-align: center;
 }
 
 .call-to-action-heading-2 {
   font: 300 40px/1.2 "Open Sans", Arial, sans-serif;
-  margin-bottom: 22px;
+  letter-spacing: -1px;
+  margin: 0 0 22px 15px;
 }
 
 .call-to-action-text-2 {
   margin-bottom: 28px;
+  margin-left: 29px;
   color: #a87bb7;
   font-size: 20px;
   line-height: 1.65;
@@ -367,6 +370,7 @@ body {
   width: 280px;
   height: 60px;
   margin-bottom: 14px;
+  margin-left: 15px;
   font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
   border: none;
   border-top: 1px solid #b87ce1;
@@ -380,6 +384,7 @@ body {
 .call-to-action-text-small {
   font-size: 12px;
   line-height: 1.416;
+  margin-left: 15px;
 }
 
 /* ==========================================================================
