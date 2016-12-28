@@ -1006,3 +1006,15 @@ body {
     font-size: 40px;
   }
 }
+
+@media only screen and (width: 736px) and (height: 414px) and (orientation: landscape) {
+  .hero .container {
+    padding: 80px 0 0 60px;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+  .menu-item {
+    margin-top: 25px;
+  }
+}
