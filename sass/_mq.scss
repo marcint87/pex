@@ -544,6 +544,48 @@
 // 		padding: 58px;
 // 	}
 
+@media only screen and (width:  568px) and (height: 320px) and (orientation: landscape) {
+	.hero .container {
+		padding: 88px 68px 0 48px;
+	}
+
+	.hero-heading {
+		font-size: 30px;
+
+		margin-bottom: 25px;
+	}
+	.hero-button {
+		width: 200px;
+	}
+
+}
+
+@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
+	.hero .container {
+		padding-left: 240px;
+	}
+
+	.text-section .container {
+		padding-top: 45px;
+	}
+	.contact {
+		height: auto;
+		padding-bottom: 71px;
+	}
+	.contact .container {
+		padding-left: 40px;
+	}
+
+	.footer {
+		height: auto;
+    	padding: 40px 0 40px 0;
+	}
+	.footer .container {
+		padding-left: 40px;
+	}
+}
+
+
 // 	.call-to-action-2  {
 // 		padding-bottom: 85px;
 // 	}
