@@ -608,6 +608,19 @@
 
 }
 
+@media only screen and (width:  640px) and (height: 360px) and (orientation: landscape) {
+
+	.menu-item {
+		margin: 10px 0 15px 0;
+	}
+	.hero .container {
+    	padding: 90px 0 0 80px;
+	}
+	.hero-heading {
+		font-size: 35px;
+	}
+}
+
 // 	.call-to-action-2  {
 // 		padding-bottom: 85px;
 // 	}
