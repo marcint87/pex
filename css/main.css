@@ -28,6 +28,35 @@
       justify-content: flex-start;
 }
 
+.menu-list {
+  list-style: none;
+  display: none;
+  width: 100%;
+  background-color: rgba(117, 117, 117, 0.9);
+}
+
+.active {
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+}
+
+.menu-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   font: 400 15px/1.73333 "Open Sans", Arial, sans-serif;
   color: #fff;
@@ -594,12 +623,14 @@ body {
   }
   .hero-heading {
     padding-right: 0px;
+    font-size: 35px;
   }
   .hero-text-block {
     text-align: center;
   }
   .hero-button {
     margin-right: 0;
+    width: 210px;
   }
   .hero-button:hover {
     -ms-transform: none;
@@ -607,6 +638,7 @@ body {
   }
   .hero-paragraph {
     margin-right: 0;
+    font-size: 14px;
   }
   /* ==========================================================================
   feature section
@@ -632,7 +664,7 @@ body {
    ========================================================================== */
   .call-to-action {
     padding-top: 45px;
-    padding-bottom: 85px;
+    padding-bottom: 35px;
     background: url(../img/bump.png) no-repeat 50.5% -10.5%, url(../img/pink.jpg) no-repeat 0% 0%;
   }
   .text-block-wrapper-2 {
@@ -641,9 +673,11 @@ body {
   }
   .call-to-action-heading {
     text-align: center;
+    font-size: 35px;
+    margin-bottom: 34px;
   }
   .call-to-action-button {
-    max-width: 320px;
+    max-width: 210px;
   }
   .call-to-action-button:hover {
     -ms-transform: none;
@@ -651,6 +685,7 @@ body {
   }
   .call-to-action-text {
     width: auto;
+    padding-left: 0;
   }
   /* ==========================================================================
   text section
@@ -669,6 +704,21 @@ body {
    ========================================================================== */
   .call-to-action-2 {
     padding: 100px 0 16px 0;
+  }
+  .call-to-action-heading-2 {
+    margin-left: 0px;
+    font-size: 35px;
+  }
+  .call-to-action-text-2 {
+    margin-left: 0px;
+    font-size: 17px;
+  }
+  .call-to-action-button-2 {
+    max-width: 210px;
+    margin-left: 0px;
+  }
+  .call-to-action-text-small {
+    font-size: 14px;
   }
   /* ==========================================================================
   feature-article section
@@ -705,6 +755,47 @@ body {
   }
 }
 
+@media screen and (device-width: 412px) and (device-height: 732px) {
+  .hero .container {
+    padding-top: 205px;
+  }
+  .call-to-action {
+    background: url(../img/bump.png) no-repeat 50.5% -11.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-width: 736px) {
+  .hero .container {
+    padding-top: 195px;
+  }
+  .call-to-action {
+    background: url(../img/bump.png) no-repeat 50.5% -11.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+  }
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) {
+  .hero {
+    height: 1024px;
+  }
+  .contact {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contact .container {
+    padding-left: 40px;
+  }
+  .footer {
+    height: auto;
+    padding-top: 40px;
+  }
+  .footer .container {
+    padding-left: 40px;
+  }
+}
+
+/* landscape view  subsection
+   ========================================================================== */
 /* tablet subsection
    ========================================================================== */
 @media screen and (min-width: 481px) and (max-width: 1023px) {
@@ -852,7 +943,7 @@ body {
 }
 
 /* ==========================================================================
-  media queries landscape view
+    ##########  media queries landscape view ###########
    ========================================================================== */
 @media (min-width: 320px) and (orientation: landscape) {
   .hero .container {
@@ -866,6 +957,18 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .hero .container {
+    padding: 85px 10px 0 10px;
+  }
+  .hero-heading {
+    margin-bottom: 15px;
+  }
+  .call-to-action {
+    background: url(../img/bump.png) no-repeat 50.5% -12.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+  }
+}
+
 @media (min-width: 1024px) and (orientation: landscape) {
   .hero .container {
     padding-top: 228px;
@@ -873,6 +976,14 @@ body {
   }
   .feature-article {
     padding-left: 50px;
+  }
+  .contact {
+    height: auto;
+    padding-top: 0px;
+  }
+  .footer {
+    height: auto;
+    padding-top: 0px;
   }
   .contact .container,
   .footer .container {
