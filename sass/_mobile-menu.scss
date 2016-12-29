@@ -14,8 +14,21 @@
 	top: 100px;
 }
 
-.button-active {
+.button-active .menu:before {
+	transform: rotate(90deg);
+	margin-right: 0;
+	top: 1px;
+	right: 1px;
+}
 
+.button-active .menu {
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 12px;
+}
+
+.button-active .menu:after {
+	opacity: 0;
 }
 
 .menu-item {
@@ -50,6 +63,8 @@
 		
 		background-color: #fff;
 		border-radius: 3px;
+
+		trasition: all 1s;
 	}
 
 	.menu:before {
