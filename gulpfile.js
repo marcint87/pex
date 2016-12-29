@@ -1,3 +1,5 @@
+var sourcemaps = require('gulp-sourcemaps');
+
 var gulp = require("gulp"),
 	$ = require("gulp-load-plugins")( {
 		lazy: true
@@ -26,12 +28,14 @@ gulp.task('css', function(){
 // zmienione : Sass.sync na Sass w pipe'ie
 	return gulp.src('sass/main.scss')
 		.pipe($.plumber())
+		.pipe(sourcemaps.init())
 		.pipe($.sass({
 			outputStyle: 'expanded'
 		}))
 		.pipe( $.autoprefixer({
 			browsers: ['last 2 versions', 'IE 9']
 		}))
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('css/'))
 		.pipe(browserSync.stream() );
 });
