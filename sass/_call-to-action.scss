@@ -1,0 +1,121 @@
+/* ==========================================================================
+   call-to-action section
+   ========================================================================== */
+
+.call-to-action {
+	background: url(../img/bump.png) no-repeat 50.5% -8%, url(../img/pink.jpg) no-repeat 0% 0%;
+
+	padding: 138px 0 195px;
+}
+
+.text-block-wrapper-2 {
+	width: 540px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	padding-left: 14px;
+}
+
+.call-to-action-heading {
+	font: 300 35px/1.714285714285714 "Open Sans", Arial, sans-serif;
+
+	margin-bottom:  4px;
+}
+
+.call-to-action-text {
+	width: 460px;
+
+	margin-bottom: 28px;
+	padding-left: 6px;
+	text-align: center;
+}
+
+.call-to-action-button {
+	width: 342px;
+	height: 62px;
+
+	font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
+
+	border: none;
+	border-radius: 30px;
+
+	background-color: #fff;
+	color: #d54c63;
+
+	transition: all .7s ease-in-out;
+}
+
+.call-to-action-button:hover,
+.hero-button:hover,
+.call-to-action-button-2:hover {
+	transform: scale(1.25);
+}
+
+@media screen and (max-width: 480px) {
+	.call-to-action {
+		padding-top: 45px;
+		padding-bottom: 35px;
+		background: url(../img/bump.png) no-repeat 50.5% -12.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+	}
+
+	.text-block-wrapper-2 {
+    	width: auto;
+    	padding-left: 0px;
+	}
+
+	.call-to-action-heading {
+		text-align: center;
+		font-size: 35px;
+		margin-bottom: 34px;
+	}
+	.call-to-action-button {
+    	max-width: 210px;
+	}
+
+	.call-to-action-button:hover,
+	.call-to-action-button-2:hover{
+		transform: none;
+	}
+
+	.call-to-action-text {
+		width: auto;
+		padding-left: 0
+	}
+}
+
+@media screen and (device-width: 412px) and (device-height: 732px)  {
+	.call-to-action {
+		background: url(../img/bump.png) no-repeat 50.5% -11.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+	}
+}
+
+@media screen and (device-width: 414px) and (device-height: 736px)  {
+	.hero-container {
+		padding-top: 195px;
+	}
+}
+
+@media screen and (device-width: 414px) and (device-height: 736px)  {
+	.call-to-action {
+		background: url(../img/bump.png) no-repeat 50.5% -11.5%, url(../img/pink.jpg) no-repeat 0% 0%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.call-to-action {
+	padding: 65px 0 65px 0;
+	background: url(../img/bump.png) no-repeat 50.5% -14%, url(../img/pink.jpg) no-repeat 0% 0%;
+}
+
+	.call-to-action-heading {
+		text-align: center;
+	}
+}
+
+@media only screen and (width:  640px) and (height: 360px) and (orientation: landscape) {
+	.call-to-action-button:hover {
+		transform: none;
+	}
+}

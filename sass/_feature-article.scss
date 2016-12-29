@@ -1,0 +1,73 @@
+/* ==========================================================================
+   feature article section
+   ========================================================================== */
+
+.feature-article {
+	background: #fff url(../img/chow.jpg) no-repeat 0% 0%;
+
+	padding: 359px 0 89px 0;
+
+	height: 670px;
+}
+
+.feature-article-block {
+	display: flex;
+	flex-flow: column nowrap;
+
+	width: 530px;
+
+	padding-left:  8px;
+}
+
+.feature-article-button {
+	width: 135px;
+	height: 35px;
+
+	margin-bottom: 18px;
+
+	border: 2px solid #fff;
+	border-radius: 25px;
+
+	background: transparent;
+	
+	font: 600 13px/2 "Open Sans", Arial, sans-serif;
+}
+
+.feature-article-text {
+	font-size: 40px;
+	font-weight: 400;
+
+	margin: 0 0 22px 0;
+	line-height: 1.25;
+}
+
+.avatar-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.feature-article-avatar {
+	display: inline-block;
+
+	width: 45px;
+	height: 45px;
+
+	border: none;
+	border-radius: 50%;
+
+	background: url(../img/avatar.png) no-repeat 0% 0%;
+}
+
+.feature-article-user {
+	display: inline-block;
+
+	margin-left: 13px;
+	font: 600 13px/3 "Open Sans", Arial, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+	 .feature-article {
+   		height: auto;
+		padding: 30px 0 30px 0;
+   }
+}

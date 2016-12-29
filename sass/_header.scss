@@ -1,0 +1,158 @@
+/* ==========================================================================
+   header section
+   ========================================================================== */
+
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	height: 103px;
+	position: relavtive;
+	z-index: 10;
+
+	border-bottom: 1px solid rgba(0, 0 , 0, .2);
+	background-color: rgba(0, 0 , 0, 0);
+}
+
+.logo {
+	  width: 40px;
+	  height: 20px;
+
+	  margin-left: 210px;
+	  margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+	.logo {
+		margin-left: 50px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.logo {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+	.logo {
+   		margin-left: 70px;
+   }
+}
+
+/* nav subsection
+   ========================================================================== */
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	// margin-right: 35px; proper margin from psd
+	margin-right: 18px;
+}
+
+.nav-list {
+	width: 441px;
+	height: 103px;
+
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-item {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.nav-item:hover {
+	border-bottom: 3px solid #fff;
+}
+
+.nav-link {
+	font: 400 13px/1.8461% "Open Sans", Arial, sans-serif;
+	line-height: 103px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-form {
+	width: 220px;
+
+	margin-left: 28px;
+	position: relative;
+}
+
+.nav-form-search {
+
+	width: 192px;
+	height: 44px;
+	box-sizing: border-box;
+
+	position: relative;
+
+	font-size: 12px;
+	padding: 0 0 0 28px;
+
+	border: none;
+	border-radius: 30px;
+	color: #626262;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.nav {
+   	display: none;
+   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.nav-list {
+		max-width: auto;
+	}
+
+	.nav-form {
+		max-width: auto;
+	}
+}
+
+/* submit  subsection
+   ========================================================================== */
+
+.search-glass {
+	width: 21px;
+	height: 25px;
+
+	position: absolute;
+	right: 16px;
+    top: 9px;
+
+	background-color: transparent;
+	border: none;
+}
+
+.icon-search {
+	color: #626262;
+
+	position: absolute;
+	right: 16px;
+    top: 9px;
+}

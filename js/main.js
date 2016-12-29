@@ -6,7 +6,7 @@ var menu =  document.getElementById("menu");
 var btn = document.getElementById("button");
 btn.addEventListener("click", function(e) {
 	if (menu.classList == "menu-list") {
-		 menu.className += " active";
+		 menu.className += " mobile-menu-visible";
 		 btn.className += " menu-active";
 	}
 	else {

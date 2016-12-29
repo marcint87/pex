@@ -1,0 +1,76 @@
+/* ==========================================================================
+   feature section
+   ========================================================================== */
+
+.feature {
+	height: 512px;
+
+	display: flex;
+	padding: 71px 0 142px 0;
+
+	background-color: #2e3b4e;
+	border-top: rgba(136, 36, 205, .5);
+}
+
+.text-block-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 860px;
+
+	padding-left: 20px;
+}
+
+.text-block {
+	width: 420px;
+
+	margin-bottom: 56px;
+	padding-left: 10px;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
+.text-block-heading {
+	font-weight: 700;
+	font-size: 15px;
+
+	margin-bottom: 21px;
+	padding-left: 2px;
+}
+
+.text-block-text {
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 480px) {
+	.feature {
+	   	height:  auto;
+
+	   	padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+   .text-block {
+	   	width: auto;
+
+	   	text-align: center;
+	   	padding-left: 0px;
+   }
+
+   .text-block-wrapper {
+   		padding-left: 0px;
+   }
+
+   .no-bottom-margin {
+   	margin-bottom: 56px; 
+   }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.feature {
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+}

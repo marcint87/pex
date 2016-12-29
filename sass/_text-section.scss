@@ -1,0 +1,113 @@
+/* ==========================================================================
+   text section
+   ========================================================================== */
+
+.text-section {
+	display: flex;
+	justify-content: center;
+
+	color: #3a4d60;
+}
+
+.text-section-container {
+	padding: 86px 0 0 0;
+
+	max-width: 1180px;
+	max-width: 954px;
+
+	flex-grow: 1;
+}
+
+.text-section-wrapper {
+	width: 750px;
+	padding-left: 100px;
+}
+
+// div with a picture
+
+.text-section-image {
+	width: 629px;
+	height: 495px;
+
+	background: #fff url(../img/hand.jpg) no-repeat 0% 0%;
+}
+
+.text-section-heading {
+	font-weight: 700;
+	font-size: 15px;
+
+	margin-bottom: 1px;
+}
+
+.text-section-text {
+	font-size: 19px;
+	line-height: 1.631578947368421;
+
+	margin-bottom: 25px;
+}
+
+.text-section-text-small {
+
+}
+
+@media screen and (max-width: 480px) {
+	.text-section-image {
+		display: none;
+	}
+
+	.text-section-container {
+		padding: 20px 0 20px 5px;
+	}
+
+	.text-section-wrapper{
+		padding-left: 5px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.text-section-container {
+		width: 100%;
+		padding: 30px 0 30px 0;
+		margin: 0 50px 0 50px;
+	}
+
+
+	.text-block-wrapper-3 {
+	    width: auto;
+	}
+
+	.text-section-wrapper {
+		padding-left: 30px;
+	}
+
+	.text-section-image {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.text-block-wrapper {
+		justify-content: center;
+	}
+
+	.text-block {
+	    width: 230px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+	.text-section-container {
+		width: 50%;
+		padding-top: 105px;
+	}
+
+	.text-section-wrapper {
+		padding-left: 60px;
+	}
+}
+
+@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
+	.text-section-container {
+		padding-top: 45px;
+	}
+}

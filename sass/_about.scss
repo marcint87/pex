@@ -1,0 +1,85 @@
+/* ==========================================================================
+   about section
+   ========================================================================== */
+
+.about {
+	display: flex;
+}
+
+.about-section-image {
+	width: 670px;
+	height: 516px;
+
+	background: #fff url(../img/watch.jpg) no-repeat 0% 0%;
+}
+
+.about-container {
+	padding: 107px 0 0 0;
+	max-width: 1180px;
+	max-width: 930px;
+	flex-grow: 1;
+
+}
+
+.about-wrapper {
+	width: 92.93%;
+
+	color: #3a4d60;
+
+	padding-left: 208px;
+}
+
+.about-heading {
+	font-size: 15px;
+	font-weight: 700; 
+
+	margin-bottom: 0;
+}
+
+.about-text {
+	margin-bottom: 25px;
+
+	font-size: 19px;
+	line-height: 1.63157;
+}
+
+.about-text-small {
+
+}
+
+@media screen and (max-width: 480px) {
+	.about-container {
+   		padding: 35px 0 20px 5px;
+   	}
+
+   	.about-wrapper {
+   		padding-left: 5px;
+    }
+    .about-section-image {
+		display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.about-wrapper {
+		padding-left: 10px;
+	}
+
+	.about-container {
+		padding: 35px 0 35px 0;
+	}
+
+	.about-section-image {
+		display: none;	
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+	.about-container {
+		padding-top: 75px;
+	}
+
+	.about-wrapper {
+		padding-left: 50px;
+	}
+}
