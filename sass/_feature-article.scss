@@ -75,3 +75,9 @@
    	padding: 30px 20px;
    }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	.feature-article-block {
+		padding: 0 30px;
+	}	
+}

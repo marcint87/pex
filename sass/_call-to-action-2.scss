@@ -93,8 +93,29 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
+
+	.call-to-action-2-container {
+		padding: 0 30px;
+	}
+
+	.call-to-action-heading-2 {
+		margin-left: 0;
+	}
+
+	.call-to-action-text-2 {
+		margin-left: 0;
+	}
+
+	.call-to-action-button-2 {
+		margin-left: 0;
+	}
+
 	.call-to-action-2 {
 		padding-bottom: 52px;
+	}
+
+	.call-to-action-text-small {
+		margin-left: 0;
 	}
 }
 
