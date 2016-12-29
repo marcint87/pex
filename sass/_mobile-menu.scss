@@ -14,6 +14,10 @@
 	top: 100px;
 }
 
+.button-active {
+	
+}
+
 .menu {
 
 }
@@ -33,7 +37,7 @@
 	color: #fff;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 	.menu-wrapper {
 		width: 35px;
 		height: 30px;
@@ -68,52 +72,6 @@
 	.menu:after {
 		content: "";
 		width: 100%;
-		height: 3px;
-
-		position: absolute;
-		bottom: 7px;
-
-		margin-right: 50px;
-		background-color: #fff;
-		border-radius: 3px;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.menu-wrapper {
-			width: 35px;
-			height: 30px;
-
-			position: relative;
-
-			margin-right: 50px;
-			cursor: pointer;
-	}
-
-	.menu {
-		width: 100%;
-		height: 3px;
-		
-		background-color: #fff;
-		border-radius: 3px;
-	}
-
-	.menu:before {
-		content: "";
-		width: 35px;
-		height: 3px;
-
-		position: absolute;
-		top: 10px;
-
-		margin-right: 50px;
-		background-color: #fff;
-		border-radius: 3px;
-	}
-
-	.menu:after {
-		content: "";
-		width: 35px;
 		height: 3px;
 
 		position: absolute;
@@ -184,5 +142,4 @@
 		margin-bottom: 9px;
 	}
 }
-
 // end of hidden menu styles
