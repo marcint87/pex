@@ -9,6 +9,13 @@
 	@media screen and (max-width: 480px) {
 		background-position: 50% 50%;
 	}
+	@media screen and (min-width: 481px) and (max-width: 1366px) {
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+	@media screen and (min-width: 1601px) {
+		background-size: cover;
+	}
 	@media screen and (device-width: 412px) and (device-height: 732px)  {
 		background-position: 50% 50%;
 	}
@@ -30,12 +37,6 @@
 	}
 	@media only screen and (width:  640px) and (height: 360px) and (orientation: landscape) {
 		background-position: 50% 50%;
-	}
-	@media screen and (min-width: 481px) and (max-width: 1023px) {
-		background-position: 50% 50%;
-	}
-	@media screen and (min-width: 1601px) {
-		background-size: cover;
 	}
 	@media only screen and (width:  736px) and (height: 414px) and (orientation: landscape) {
 		background-position: 50% 50%;
