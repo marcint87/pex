@@ -34,6 +34,12 @@
 	flex-flow: column nowrap;
 
 	text-align: center;
+	@media screen and (max-width: 480px) {
+	    padding: 30px 20px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+	    width: auto;
+	}
 }
 
 .call-to-action-heading-2 {

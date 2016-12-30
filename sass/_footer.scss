@@ -7,53 +7,41 @@
 
 	background-color: #2e3b4e;
 	padding-top: 39px;
+
+	@media screen and (max-width: 480px) {
+   		height: auto;
+		padding: 30px 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 1023px) {
+		height: auto;
+		padding: 30px 0 30px 0;
+	}
+	@media screen and (device-width: 1024px) and (device-height: 1366px)  {
+		height: auto;
+		padding-top: 40px;
+	}
+	@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
+		height: auto;
+    	padding: 40px 0 40px 0;
+	}
+}
+
+.footer-container {
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		padding-left: 30px;
+	}
+	@media screen and (min-width: 1024px) and (max-width: 1366px) {
+		padding-left: 50px;
+	}
+	@media screen and (device-width: 1024px) and (device-height: 1366px)  {
+		padding-left: 40px;
+	}
+	@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
+		padding-left: 40px;
+	}
 }
 
 .footer-text {
 	padding-left: 8px;
 	font-size: 12px;
-}
-
-@media screen and (max-width: 480px) {
-	.footer {
-   		height: auto;
-		padding: 30px 20px;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.footer {
-		height: auto;
-		padding: 30px 0 30px 0;
-	}
-	.footer-container {
-		padding-left: 30px;
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-	.footer-container {
-		padding-left: 50px;
-	}
-}
-
-@media screen and (device-width: 1024px) and (device-height: 1366px)  {
-	.footer {
-		height: auto;
-		padding-top: 40px;
-	}
-
-	.footer-container {
-		padding-left: 40px;
-	}
-}
-
-@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
-	.footer {
-		height: auto;
-    	padding: 40px 0 40px 0;
-	}
-	.footer-container {
-		padding-left: 40px;
-	}
 }

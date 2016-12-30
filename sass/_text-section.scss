@@ -16,20 +16,51 @@
 	max-width: 954px;
 
 	flex-grow: 1;
+
+	@media screen and (max-width: 480px) {
+		padding: 30px 20px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		width: 100%;
+		padding: 30px 0 30px 0;
+		margin: 0 30px 0 30px;
+	}
+	@media screen and (min-width: 1024px) and (max-width: 1366px) {
+		width: 50%;
+		padding-top: 50px;
+	}
+	@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
+		padding-top: 45px;
+	}
 }
 
 .text-section-wrapper {
 	width: 750px;
 	padding-left: 100px;
-}
 
-// div with a picture
+	@media screen and (max-width: 480px) {
+		padding-left: 5px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		padding: 0 50px;
+	}
+	@media screen and (min-width: 1024px) and (max-width: 1366px) {
+		padding-left: 60px;
+	}
+}
 
 .text-section-image {
 	width: 629px;
 	height: 495px;
 
 	background: #fff url(../img/hand.jpg) no-repeat 0% 0%;
+
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		display: none;
+	}
 }
 
 .text-section-heading {
@@ -48,68 +79,4 @@
 
 .text-section-text-small {
 
-}
-
-@media screen and (max-width: 480px) {
-	.text-section-image {
-		display: none;
-	}
-
-	.text-section-container {
-		padding: 20px 0 20px 5px;
-	}
-
-	.text-section-wrapper{
-		padding-left: 5px;
-	}
-
-	.text-block-wrapper {
-		padding: 0 20px 0 20px;
-	}
-
-	.text-section-container {
-		padding: 30px 20px;
-	}
-
-	.text-block-wrapper-3 {
-	    padding: 30px 20px;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.text-section-container {
-		width: 100%;
-		padding: 30px 0 30px 0;
-		margin: 0 30px 0 30px;
-	}
-
-	.text-block-wrapper-3 {
-	    width: auto;
-	}
-
-	.text-section-wrapper {
-		padding: 0 50px;
-	}
-
-	.text-section-image {
-		display: none;
-	}
-}
-
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-	.text-section-container {
-		width: 50%;
-		padding-top: 50px;
-	}
-
-	.text-section-wrapper {
-		padding-left: 60px;
-	}
-}
-
-@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
-	.text-section-container {
-		padding-top: 45px;
-	}
 }

@@ -5,19 +5,13 @@
 	justify-content: center;
 
 	@media screen and (max-width: 480px) {
-		.container {
-			width: 100%;
-		}
+		width: 100%;
 	}
 
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
-			.container {
-				width: auto;
-			}
-		}
-	@media screen and (min-width: 1024px) and (max-width: 1366px) {
-	 	.container {
-	 		width: 100%;
-	 	}
+		width: auto;
 	}
+	@media screen and (min-width: 1024px) and (max-width: 1366px) {
+ 		width: 100%;
+ 	}
 }

@@ -26,25 +26,18 @@
 
 	  margin-left: 210px;
 	  margin-right: auto;
+
+	  @media screen and (max-width: 480px) {
+	  	margin-left: 50px;
+	  }
+	  @media screen and (min-width: 481px) and (max-width: 1023px) {
+	  	margin-left: 20px;
+	  }
+	  @media screen and (min-width: 1024px) and (max-width: 1366px) {
+	  	margin-left: 70px;
+	  }
 }
 
-@media screen and (max-width: 480px) {
-	.logo {
-		margin-left: 50px;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.logo {
-		margin-left: 20px;
-	}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-	.logo {
-   		margin-left: 70px;
-   }
-}
 
 /* nav subsection
    ========================================================================== */
@@ -54,8 +47,14 @@
 	justify-content: space-between;
 	align-items: center;
 
-	// margin-right: 35px; proper margin from psd
 	margin-right: 18px;
+
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		display: none;
+	}
 }
 
 .nav-list {
@@ -66,6 +65,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		max-width: auto;
+	}
 }
 
 .nav-item {
@@ -90,6 +93,10 @@
 
 	margin-left: 28px;
 	position: relative;
+
+	@media screen and (min-width: 481px) and (max-width: 1023px) {
+		max-width: auto;
+	}
 }
 
 .nav-form-search {
@@ -103,35 +110,12 @@
 	font-size: 12px;
 	padding: 0 0 0 28px;
 
-	// border: none;
 	border: 1px solid #3a4d60;
 	border-radius: 30px;
 	color: #626262;
 
 	&:focus {
 		outline: none;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.nav {
-   	display: none;
-   }
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.nav {
-		display: none;
-	}
-}
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-	.nav-list {
-		max-width: auto;
-	}
-
-	.nav-form {
-		max-width: auto;
 	}
 }
 
