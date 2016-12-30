@@ -49,8 +49,8 @@
 	margin: 0 0 22px 15px;
 
 	@media screen and (max-width: 480px) {
-			margin-left: 0px;
-			font-size: 35px;
+		margin-left: 0px;
+		font-size: 35px;
 	}
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
 		margin-left: 0;
@@ -67,8 +67,8 @@
 	line-height: 1.65;
 
 	@media screen and (max-width: 480px) {
-			margin-left: 0px;
-			font-size: 17px;
+		margin-left: 0px;
+		font-size: 17px;
 	}
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
 		margin-left: 0;
@@ -79,8 +79,7 @@
 	width: 280px;
 	height: 60px;
 
-	margin-bottom:  14px;
-	margin-left: 15px;
+	margin: 0 0 14px 15px;
 	
 	font: 700 18px/3.333333 "Open Sans", Arial, sans-serif;
 
@@ -99,7 +98,6 @@
 		max-width: 210px;
 		margin-left: 0px;
 	}
-
 	@media only screen and (width:  640px) and (height: 360px) and (orientation: landscape) {
 		transform: none;
 	}
@@ -114,7 +112,7 @@
 	margin-left: 15px;
 
 	@media screen and (max-width: 480px) {
-			font-size: 14px;
+		font-size: 14px;
 	}
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
 		margin-left: 0;
