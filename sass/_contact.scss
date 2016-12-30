@@ -9,46 +9,32 @@
 
 	background: #e7526b;
 	@media screen and (max-width: 480px) {
-		.contact {
-			height: auto;
-			padding: 20px 20px;
-		}
+		height: auto;
+		padding: 20px 20px;
 	}
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
-		.contact {
-			height: auto;
-			padding: 30px 0 30px 0;
-		}
+		height: auto;
+		padding: 30px 0 30px 0;
 	}
 	@media screen and (device-width: 1024px) and (device-height: 1366px)  {
-		.contact {
-			height: auto;
-			padding-top: 30px;
-	    	padding-bottom: 30px;
-		}
+		height: auto;
+		padding-top: 30px;
+    	padding-bottom: 30px;
 	}
 	@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
-		.contact {
-			height: auto;
-			padding-bottom: 71px;
-		}
+		height: auto;
+		padding-bottom: 71px;
 	}
 }
 .contact-container {
 	@media screen and (min-width: 1024px) and (max-width: 1366px) {
-		.contact-container {
-			padding-left: 50px;
-		}
+		padding-left: 50px;
 	}
 	@media screen and (device-width: 1024px) and (device-height: 1366px)  {
-		.contact-container {
-			padding-left: 40px;
-		}
+		padding-left: 40px;
 	}
 	@media only screen and (width:  1024px) and (height: 768px) and (orientation: landscape) {
-		.contact-container {
-			padding-left: 40px;
-		}
+		padding-left: 40px;
 	}
 }
 
@@ -56,14 +42,10 @@
 	padding-left: 9px;
 	width: 410px;
 	@media screen and (max-width: 480px) {
-		.contact-wrapper {
-			padding: 0;
-		}
+		padding: 0;
 	}
 	@media screen and (min-width: 481px) and (max-width: 1023px) {
-		.contact-wrapper {
-			padding-left: 30px;
-		}
+		padding-left: 30px;
 	}
 }
 
